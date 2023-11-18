@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&family=VT323&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&family=Sulphur+Point:wght@700&family=VT323&display=swap');
+
+:root{
+    --color-primary: #ED4D1B;
+    --color-secondary: #FF9A3C;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-green: #137f0b;
+    --color-red: #f82510;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E6 100%);
+    padding: 0 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px; 
+}
+
+/* - - - H E A D E R - - - */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header{
+    border-color: var(--color-black);
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    padding: 1.25rem;
+}
+
+main{
+    border-color: var(--color-black);
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    padding: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.logo a:hover{
+    color: var(--color-primary);
+    transition: 0.3s all;
+}
+
+.logo img{
+    width: 85px;
+    height: 85px;
+}
+
+.logo img:hover{
+    transition: transform 200ms ease-in-out;
+    transform: scale(1.02);
+}
+
+.logo-txt{
+    font-family: 'Lobster', sans-serif;
+    padding-left: 27px;
+    align-self: center;
+    font-size: 1.5rem;
+    line-height: 157%;
+}
+
+.logo-txt-1{
+    color: var(--color-primary);
+    text-shadow: 2.5px 2.5px 0 var(--color-black);
+}
+
+.logo-txt-2{
+    font-size: 1.8rem;
+}
+
+/* - - - F O R M U L Á R I O - - - */
+
+/*Labels*/
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.formulario h1{
+    font-family: 'Lobster', sans-serif;
+    font-size: 28px;
+    margin-top: 65px;
+    margin-bottom: 20px;
+}
+
+.campos{
+    display: flex;
+    flex-direction: row;
+}
+
+.labels{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-right: 17px;
+}
+
+.labels label{
+    margin-bottom: 12px;
+}
+
+/*inputs*/
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    outline: none;
+}
+
+.inputs input{
+    margin-bottom: 11px;
+}
+
+/*mensagem*/
+
+.mensagem .label{
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.mensagem .text textarea{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*botoes*/
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.botao-enviar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.botao-enviar{
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-black);
+    color: var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    padding: .65rem 1rem;
+    max-width: 14rem;
+    font-size: 1.1rem;
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 12px;
+}
+
+.botao-enviar:hover{
+    transition: transform 200ms ease-in-out;
+    transform: scale(1.02);
+}
+
+.botoes img{
+    height: 23px;
+    width: 23px;
+    margin-right: 6.8px;
+}
+    
